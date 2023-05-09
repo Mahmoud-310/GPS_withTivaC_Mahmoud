@@ -17,9 +17,8 @@ float longitude;
 float latitude;
 
 int main(void)
-{
-    longitude = 0;
-    latitude = 0;
+ {
+
     GPGGA_Fix = false;
 
     UART1_Init();
@@ -32,7 +31,9 @@ int main(void)
             UART1_InString(gps_dump,100);
             Message_Classifier(gps_dump);
         if(GPGGA_Fix)
+        {
             longitude = Extract_Longitude(GPGGA);
             latitude = Extract_Latitude(GPGGA);
+        }
     }
 }
