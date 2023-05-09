@@ -134,7 +134,7 @@ void UART0_CRLF(void)
 =======================================*/
 
 //void UART1_Init(unsigned long frequency, unsigned long BaudRate)
-
+///WARNING: MODIFIED USE FOR GPS MODULE FUNCTIONALITY - DOESN'T WORK WITH SERIAL MONITORS
 void UART1_Init(void)
 {
 	//unsigned long BRD = ((frequency<<2)+BaudRate)/BaudRate;
