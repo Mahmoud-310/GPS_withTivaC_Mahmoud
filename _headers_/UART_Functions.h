@@ -1,3 +1,10 @@
+/*0.Documentation Section
+Author: Ahmed Haitham Ismael El-Ebidy
+Date: 29,April,2023
+Description: functions to provide an interface with UART protocol services in the TM4C123GH6PM microcontroller
+/*
+
+
 #include "tm4c123gh6pm.h"
 #include <string.h>
 #include <stdio.h>
